@@ -64,3 +64,32 @@ h2{
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  color:darkcyan;
 }
+
+#reg{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input_det{
+    width: 80%;
+    height: 5%;
+    color:darkcyan
+}
+
+#radio{
+    font-size: 25px;
+    color: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form{
+    margin-left: 10px
+}
+
+#submit{
+    width: 100px;
+    height: 25px;
+    background-color:cadetblue;
+    color: white;
+    cursor: pointer;
+}
