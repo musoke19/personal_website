@@ -93,3 +93,20 @@ h2{
     color: white;
     cursor: pointer;
 }
+
+.passion{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: azure;
+}
+
+.media{
+    padding-left: 50px;
+}
+
+video{
+    width: 40%;
+    height: 45%;
+    padding-bottom: 20px;
+}
