@@ -10,7 +10,7 @@
 }
 
 
-.slideshow-container {
+.slideshow {
     max-width: 1000px;
     position: relative;
     margin: auto;
@@ -22,34 +22,6 @@
     display: none;
 }
 
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
 
 .text {
@@ -63,7 +35,7 @@
 }
 
 
-.numer {
+.numeration {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -72,24 +44,9 @@
 }
 
 
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: rgb(189, 34, 34);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: #43b9ce;
-}
 
 
-.fade {
+.fd {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
@@ -134,48 +91,49 @@
         </div>
     </div>
     
-    
-    <div class="mySlides fade">
+  <div class="slideshow"> 
+    <div class="mySlides fd">
             <div class="numeration">1 / 6</div>
             <img src="zz.jpg" style="width:100%">
             
         </div>
 
 
-        <div class="mySlides fade">
+        <div class="mySlides fd">
             <div class="numeration">2 / 6</div>
             <img src="vd.jpg" style="width:100%">
             
         </div>
 
-        <div class="mySlides fade">
+        <div class="mySlides fd">
             <div class="numeration">3 / 6</div>
             <img src="nz.jpg" style="width:100%">
             
         </div>
 
 
-        <div class="mySlides fade">
+        <div class="mySlides fd">
             <div class="numeration">4 / 6</div>
             <img src="ac.jpg" style="width:100%">
             
         </div>
 
 
-        <div class="mySlides fade">
+        <div class="mySlides fd">
             <div class="numeration">5 / 6</div>
             <img src="bb.jpg" style="width:100%">
             
         </div>
 
-        <div class="mySlides fade">
+        <div class="mySlides fd">
             <div class="numeration">6 / 6</div>
             <img src="cl.jpg" style="width:100%">
            
         </div>
+    </div>
 
     <script>
-                                 var slideIndex = 0;
+                       var slideIndex = 0;
                         carousel();
 
                         function carousel() {
@@ -187,7 +145,7 @@
                           slideIndex++;
                           if (slideIndex > x.length) {slideIndex = 1}
                           x[slideIndex-1].style.display = "block";
-                          setTimeout(carousel, 2000); // Change image every 2 seconds
+                          setTimeout(carousel, 5000); 
                         }
     </script>
     </body>
